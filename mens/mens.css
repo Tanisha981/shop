@@ -1,0 +1,57 @@
+.mens-img{
+    position: relative;
+}
+.mens-img img{
+    width: 100%;
+    height: 383px;
+    object-fit: cover;
+    object-position: top;
+}
+.clothing-main-box .clothing-inner-main-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 25px;
+
+}
+.for-hover{
+    background: #66bebeb3;
+    position: absolute;
+    width: 282px;
+    height: 383px;
+    display: none;
+    top: 0;
+}
+.mens-img:hover .for-hover{
+    display: block;
+}
+/* .mens-img::before {
+    content: '';
+    position: absolute;
+    width: 282.5px;
+    height: 383px;
+    background: #66bebed1;
+    opacity: 0;
+    display: none;
+}
+.mens-img:hover + ::before{
+    opacity: 1;
+    display: block;
+} */
+@media (max-width:1023px){
+    .clothing-main-box .clothing-inner-main-box{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media (max-width: 768px){
+    .clothing-main-box .clothing-inner-main-box{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width: 767px){
+    .clothing-main-box .clothing-inner-main-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .mens-img img{
+        height: auto;
+    }
+}

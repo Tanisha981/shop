@@ -1,0 +1,95 @@
+.part-1 img{
+    width: 100%;
+}
+.hide-parts{
+    display: none;
+}
+del{
+    font-size: 20px;
+    color: #bdbdbd;
+}
+.offer{
+    color: #00b300;
+    font-size: 20px;
+    padding-left: 8px;
+}
+.reviews{
+    display: flex;
+    margin: 14px 0;
+}
+.reviews p{
+    color: #676161;
+}
+.rating{
+    display: flex;
+    background-color: #069206;
+    width: 50px;
+    padding: 0px 10px;
+    border-radius: 18px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 12px;
+}
+.rating p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.available-offer{
+    display: flex;
+    margin: 8px 0;
+    align-items: center
+}
+.available-offer a{
+    color: #007bff;
+    font-weight: 600;
+}
+.available-offer p{
+    padding: 0 8px;
+    font-size: 14px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.location p{
+    color: #676161;
+}
+#delivery-code{
+    width: 170px;
+    border: 0;
+    border-bottom: 2px solid #527bff;
+    font-size: 14px;
+}
+#delivery-code:focus{
+    outline: none;
+}
+.mens-color img{
+    width: 98px;
+}
+.colors-category{
+    color: #676161;
+    margin-top: 40px;
+    display: flex;
+}
+.colors-category p{
+    margin-right: 30px;
+}
+.clothing-main-box .clothing-inner-main-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 25px;
+
+}
+.mens-img img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    object-position: top;
+}
+@media (max-width: 767px){
+    .clothing-main-box .clothing-inner-main-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
