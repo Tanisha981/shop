@@ -48,6 +48,8 @@ let userIcon = document.querySelector('.user');
 let parts = document.querySelectorAll('.parts');
 let displayParts = document.querySelectorAll('.part-1');
 let displayColor = document.querySelectorAll('.mens-color1');
+let showDetail = document.getElementById('show-detail');
+let showProductDetail = document.querySelector('.product-details');
 
 categoryList.addEventListener('mouseover',function (){
     dropDownList.style.display='block';
@@ -107,4 +109,7 @@ displayColor[2].addEventListener('click', function(){
         displayParts[j].style.display='none';
     }
     displayParts[5].style.display='block';
+});
+showDetail.addEventListener('click',()=>{
+    showProductDetail.classList.toggle('show');
 });
