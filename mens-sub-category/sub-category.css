@@ -88,6 +88,16 @@ del{
     object-fit: cover;
     object-position: top;
 }
+.product-details{
+    display: none;
+}
+th{
+    width: 230px;
+    height: 35px;
+}
+#show-detail{
+    cursor: pointer;
+}
 @media (max-width: 767px){
     .clothing-main-box .clothing-inner-main-box{
         grid-template-columns: repeat(2,1fr);
