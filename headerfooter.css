@@ -254,7 +254,7 @@ input[type=text] {
       color: #ff5e14;
     }
 .show{   /*new*/
-  display: block;
+  display: block!important;
 }
 footer{
   padding-top: 40px;
