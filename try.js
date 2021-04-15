@@ -50,6 +50,9 @@ let displayParts = document.querySelectorAll('.part-1');
 let displayColor = document.querySelectorAll('.mens-color1');
 let showDetail = document.getElementById('show-detail');
 let showProductDetail = document.querySelector('.product-details');
+let likeBtn = document.querySelector('.like');
+let loginPage = document.querySelector('.login-page');
+let backDrop = document.querySelector('.backdrop');
 
 categoryList.addEventListener('mouseover',function (){
     dropDownList.style.display='block';
@@ -112,4 +115,12 @@ displayColor[2].addEventListener('click', function(){
 });
 showDetail.addEventListener('click',()=>{
     showProductDetail.classList.toggle('show');
+});
+likeBtn.addEventListener('click',()=>{
+    loginPage.style.display='block';
+    backDrop.style.display='block';
+});
+backDrop.addEventListener('click',()=>{
+    loginPage.style.display='none';
+    backDrop.style.display='none';
 });
