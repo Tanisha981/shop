@@ -32,8 +32,9 @@ del{
 }
 .rating p{
     color: white;
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 0;
+    font-weight: 600;
 }
 .available-offer{
     display: flex;
@@ -71,7 +72,6 @@ del{
 .colors-category{
     color: #676161;
     margin-top: 40px;
-    display: flex;
 }
 .colors-category p{
     margin-right: 30px;
@@ -98,8 +98,87 @@ th{
 #show-detail{
     cursor: pointer;
 }
+progress{
+    display: block;
+    height: 20px;
+}
+.rater {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.like{
+    position: absolute;
+    right: 22px;
+    font-size: 25px;
+}
+.login-page{
+    /* display: flex; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    margin: 0 auto;
+    display: none;
+    height: 600px;
+    width: 560px;
+    box-shadow: 1px 1px 3px grey;
+    background: linear-gradient(to right, #ffffff, #e24061);
+}
+.login-title{
+    /* background-color: #ce2d63; */
+    /* color: #fff; */
+    padding: 40px 12px;
+    font-size: 16px;
+}
+.login-title h4{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.details{
+    padding: 20px;
+    text-align: center;
+} 
+.details p{
+    margin: 20px 0;
+}
+.info{
+    border: 0;
+    border-bottom: 2px solid #943066;
+    width: 100%;
+    margin: 20px 0;
+    padding: 8px;
+    background: transparent;
+}
+.login{
+    width: 80%;
+    margin: auto;
+    border: 0;
+    background: #f44336;;
+    color: #fff;
+    padding: 12px 0;
+}
+.info:focus{
+    outline: none;
+}
+.backdrop{
+    position: fixed;
+    width: 100%;
+    background: #000000c9;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    display: none; 
+}
 @media (max-width: 767px){
     .clothing-main-box .clothing-inner-main-box{
         grid-template-columns: repeat(2,1fr);
+    }
+    .login-page{
+        width: 90%;
+    }
+    .login-title{
+        padding: 30px 12px;
     }
 }
