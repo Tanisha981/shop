@@ -177,6 +177,8 @@ progress{
     }
     .login-page{
         width: 90%;
+        height: 95%;
+        top: 15px;
     }
     .login-title{
         padding: 30px 12px;
